@@ -26,15 +26,10 @@ jobs:
     runs-on:  ubuntu-18.04
 
     steps:
-      #- name: Checkout repo
-      #  uses: actions/checkout@v2
-      #  with:
-      #    submodules: recursive
       - name: setup demo
         run: |
           mkdir aaaaaaaaaaa
           touch aaaaaaaaaaa/oof.txt
-          touch aaaaaaaaaaa/.dot.txt
 
       - name: Nextcloud Artifact
         uses: trympet/nextcloud-artifacts-action@v2
