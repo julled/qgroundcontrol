@@ -122,7 +122,7 @@ jobs:
         uses: trympet/nextcloud-artifacts-action@v2
         with:
           name: ${{ env.ARTIFACT }}                                   # Name of the artifact
-          path: '${{ runner.temp }}/shadow_build_dir/package/*.apk'                                  # Globbing supported
+          path: '${{ runner.temp }}/shadow_build_dir/**/*.apk'                                  # Globbing supported
           nextcloud-url: 'https://cloud.mafiasi.de'        # Nextcloud URL
           nextcloud-username: ${{ secrets.NEXTCLOUD_USERNAME }} # Username from repository secret
           nextcloud-password: ${{ secrets.NEXTCLOUD_PASSWORD }} # Password from repository secret
